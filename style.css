@@ -1,0 +1,244 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  background-color: #ebecf0;
+}
+
+li {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1222px;
+  margin: 0 auto;
+  padding: 0 10.9rem 0 10.9rem;
+}
+
+.header__bckg {
+  background: url("./images/main-backg.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+.header__container {
+  backdrop-filter: blur(6px);
+  padding: 2rem 6rem;
+}
+
+.header-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-photo__photo {
+  width: 20%;
+}
+.header-photo__information {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-photo__name {
+  font-family: "Inika", serif;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.header-photo__info {
+  font-family: "Inika", serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.main-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.aside {
+  width: 30%;
+  background-color: rgba(108, 153, 154, 0.4705882353);
+}
+
+.about-myself {
+  margin: 3rem;
+}
+.about-myself__introduce {
+  font-family: "Inika", serif;
+  font-size: 2rem;
+  line-height: 30px;
+  text-align: justify;
+  padding: 3rem 0;
+}
+
+.title-main {
+  font-family: "Inika", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 3rem;
+}
+
+.title {
+  width: 52%;
+  font-family: "Inika", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: #cab9d7;
+  color: #000000;
+  position: relative;
+  left: -21px;
+  margin-top: 3rem;
+  padding: 0.5rem;
+}
+.title::after {
+  content: "";
+  height: 100%;
+  width: 10px;
+  position: absolute;
+  right: -6px;
+  top: 0;
+  background-color: #7c638f;
+  transform: skew(10deg);
+}
+.title::before {
+  content: "";
+  border: 10px solid;
+  border-color: #7c638f #7c638f transparent transparent;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
+  margin: 0 3rem;
+  padding-bottom: 3rem;
+}
+.links {
+  width: 100%;
+  display: inline-block;
+  font-family: "Inika", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  transition: ease-in-out 0.7s;
+}
+.links:hover {
+  color: #ebecf0;
+  transition: ease-in-out 0.7s;
+}
+.links__phone {
+  width: 20%;
+}
+.links__github {
+  width: 40%;
+}
+.links__email {
+  width: 15%;
+}
+.links__linked-in {
+  width: 30%;
+}
+
+.main-info {
+  width: 70%;
+  padding: 3rem 6rem;
+  background-color: #ffffff;
+}
+
+.lists-property {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+  font-size: 2rem;
+  font-family: "Inika", serif;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.lists-property_projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  list-style-type: none;
+  flex-wrap: wrap;
+  row-gap: 2.5rem;
+  column-gap: 1.7rem;
+}
+.lists-property__items {
+  width: 48%;
+}
+
+.projects-images {
+  width: 100%;
+}
+
+.edukation {
+  padding-bottom: 10rem;
+}
+.edukation__name-of-school {
+  font-family: "Inika", serif;
+  font-size: 2rem;
+  padding-top: 3rem;
+}
+
+.project-links {
+  position: relative;
+}
+
+.projects-images {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-links:hover .projects-images {
+  opacity: 0.3;
+}
+
+.project-links:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #7c638f;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/*# sourceMappingURL=style.css.map */
